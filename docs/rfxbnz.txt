@@ -75,7 +75,7 @@ Create device by device type
 
 There is different sensors devices type:
 
- * basic sensor, Temperature, Humidity, Luminosity ...
+ * basic sensors: Temperature, Humidity, Luminosity ...
  * x10 swith
  * homeeasy switch 
  * ATI remote keys
@@ -83,7 +83,7 @@ There is different sensors devices type:
 .. image:: Domogik_Plugin-rfxbnz_3.png
 
 
-One parameter are needed for a **sensor basic**, **x10 switch** and **remote** domogik device creation:
+One parameter are needed for a **basic sensor**, **x10 switch** and **remote** domogik device creation:
 
 ===================== =========================== ======================================================================
 Key                   Type                        Description
