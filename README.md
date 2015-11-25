@@ -3,9 +3,9 @@
 
 ## Purpose
 
-Virtual plugin (info.json only) for **xpl-rfxcom-rx** program sensor (lib xpl-perl) that interfaces the old usb rfxcom receiver.
+Virtual plugin (info.json only) for **xpl-rfxcom-rx** program sensor (lib xpl-perl) that interfaces the **old usb rfxcom receiver**.
 
-![rfxcom_usb.jpg](design/rfxcom_usb.jpg)
+![rfxcom_usb.jpg](design/rfxcom_usb_2.jpg)
 
 
 This is a package for Domogik : http://www.domogik.org
