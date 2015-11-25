@@ -8,7 +8,7 @@ Plugin rfxbnz
 Purpose
 =======
 
-The rfxbnz plugin is used to handle xPL messages sent by xPL clients **xpl-rfxcom-rx** of lib 
+The **rfxbnz** plugin is used to handle xPL messages sent by xPL clients **xpl-rfxcom-rx** of lib 
 `xpl-perl <https://github.com/beanz/xpl-perl>`_ interfacing the **old usb rfxcom receiver**.
 
 .. image:: rfxcom_usb_2.jpg
