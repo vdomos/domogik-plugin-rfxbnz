@@ -29,10 +29,10 @@ You just have to install the plugin, check it is present in the clients list and
 	
 This "virtual" plugin (info.json only) can cath this message type:
 
-* sensor.basic    (Oregon / OWL sensor)
-* x10.basic    (X10 RF or old Chacon emitter)
-* homeeasy.basic    (Chacon/ DIO RF emitter)
-* remote.basic    (ATI RF remote)
+* **sensor.basic**    (Oregon / OWL sensor)
+* **x10.basic**    (X10 RF or old Chacon emitter)
+* **homeeasy.basic**    (Chacon / DIO RF emitter)
+* **remote.basic**    (ATI RF remote)
 
 Example of xPL messages send by the bnz-rfxcom-rx program : ::
 
