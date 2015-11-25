@@ -22,4 +22,3 @@ http://domogik-plugin-rfxbnz.readthedocs.org/en/latest/index.html
 To install this package on your Domogik system, you can go in this GitHub repository releases page and get the link to a release .zip file. Then you just have to do :
 
     dmg_package -i https://github.com/vdomos/domogik-plugin-rfxbnz/archive/master.zip
-

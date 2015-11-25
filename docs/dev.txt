@@ -1,0 +1,5 @@
+========================
+Development informations
+========================
+
+There is no python part for this plugin. All is handled in the *info.json* file.
