@@ -23,16 +23,16 @@ The rfxbnz plugin contains only the description of the xPL messages to catch and
 You just have to install the plugin, check it is present in the clients list and create some devices. 
 
 .. note::
-	You must see your xpl-rfxcom-rx clients in the clients list as **xPL clients**. If you don't see them, it means that the xPL hub doesn't see them and so the plugin won't be able to catch the xPL messages.
+	You must see your **xpl-rfxcom-rx** clients in the clients list as **xPL clients**. If you don't see them, it means that the xPL hub doesn't see them and so the plugin won't be able to catch the xPL messages.
 
 	
 	
 This "virtual" plugin (info.json only) can cath this message type:
 
-* sensor.basic 
-* x10.basic
-* homeeasy.basic
-* remote.basic
+* sensor.basic    (Oregon / OWL sensor)
+* x10.basic    (X10 RF or old Chacon emitter)
+* homeeasy.basic    (Chacon/ DIO RF emitter)
+* remote.basic    (ATI RF remote)
 
 Example of xPL messages send by the bnz-rfxcom-rx program : ::
 
