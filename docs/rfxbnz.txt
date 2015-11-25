@@ -14,7 +14,7 @@ The **rfxbnz** plugin is used to handle xPL messages sent by xPL clients **xpl-r
 .. image:: rfxcom_usb_2.jpg
 
 
-The rfxbnz plugin contains only the description of the xPL messages to catch and so **there is nothing to start/stop and nothing to configure**.
+The **rfxbnz** plugin contains only the description of the xPL messages to catch and so **there is nothing to start/stop and nothing to configure**.
 
 
 .. image:: Domogik_Plugin-rfxbnz_2.png
