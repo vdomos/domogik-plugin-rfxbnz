@@ -1,6 +1,15 @@
 { 
 	"products" : [], 
-	"configuration": [], 
+	"configuration": [
+		{
+			"default": "",
+			"description": "host where rfxcom-bnz script run",
+			"key": "host",
+			"name" : "rfxbnz host",
+			"required": true,
+			"type": "string"
+		}
+	], 
 	"commands": {},
 	"xpl_commands": {}, 
 	"sensors": {
