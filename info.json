@@ -264,6 +264,20 @@
 				"expire": 0,
 				"round_value": 0
 			}
+		},
+		"sensor_generic": {
+			"name": "Generic",
+			"incremental" : false,
+			"data_type": "DT_Number",
+			"conversion": "",
+			"timeout" : 600,
+			"history": {
+				"store": true,
+				"duplicate" : false,
+				"max": 0,
+				"expire": 0,
+				"round_value": 0
+			}
 		}
 	},
 	"xpl_stats": {
@@ -271,20 +285,20 @@
 			"name": "Stat Temperature",
 			"schema": "sensor.basic",
 			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "temp"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_temperature"
-						}
-					]
+				"static": [
+					{
+						"key": "type",
+						"value": "temp"
+					}
+				],
+				"device": [],
+				"dynamic": [
+					{
+						 "key": "current",
+						 "ignore_values": "",
+						 "sensor": "sensor_temperature"
+					}
+				]
 			}
 		},
 		"stat_humidity": {
@@ -611,6 +625,21 @@
 					}
 				]
 			}
+		},
+		"stat_generic": {
+			"name": "Stat Generic",
+			"schema": "sensor.basic",
+			"parameters": {
+					"static": [],
+					"device": [],
+					"dynamic": [
+						{
+							 "key": "current",
+							 "ignore_values": "",
+							 "sensor": "sensor_generic"
+						}
+					]
+			}
 		}
 	},	
 	"device_types": {
@@ -619,7 +648,7 @@
 			"id": "rfxbnz.temperature", 
 			"name": "Temperature sensors",
 			"commands": [],
-			"sensors": ["sensor_temperature"],
+			"sensors": ["sensor_temperature", "sensor_battery"],
 			"parameters": [
 				{
 					"key": "device",
@@ -635,6 +664,21 @@
 			"name": "Humidity sensors",
 			"commands": [],
 			"sensors": ["sensor_humidity"],
+			"parameters": [
+				{
+					"key": "device",
+					"xpl" : true,
+					"description": "xPL device parameter name.",
+					"type": "string"
+				}
+			]
+		},
+		"rfxbnz.temperature_humidity": {
+			"description": "", 
+			"id": "rfxbnz.temperature_hummidity", 
+			"name": "Temperature and Humidity sensors",
+			"commands": [],
+			"sensors": ["sensor_temperature", "sensor_humidity", "sensor_battery"],
 			"parameters": [
 				{
 					"key": "device",
@@ -887,6 +931,31 @@
 					"xpl" : true,
 					"description": "The xPL device name of the ATI remote (ATI_Remote)",
 					"type": "string"
+				}
+			]
+		},
+		"rfxbnz.generic": {
+			"description": "", 
+			"id": "rfxbnz.generic", 
+			"name": "Generic sensors (Arduino Oregon)",
+			"commands": [],
+			"sensors": ["sensor_generic"],
+			"parameters": [
+				{
+					"key": "device",
+					"xpl" : true,
+					"description": "xPL device parameter name.",
+					"type": "string"
+				},
+				{
+					"key": "type",
+					"xpl": true,
+					"description": "xPL Sensor type",
+					"type": "choice",
+					"choices" : {
+						"temp" : "temp",
+						"humidity" : "humidity"
+					}
 				}
 			]
 		}
