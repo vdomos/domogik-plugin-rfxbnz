@@ -237,6 +237,20 @@
 				"round_value": 0
 			}
 		},
+		"sensor_homeeasy_openclose": {
+			"name": "Homeeasy OpenClose",
+			"incremental" : false,
+			"data_type": "DT_OpenClose",
+			"conversion": "from_off_on_to_DT_OpenClose",
+			"timeout" : 0,
+			"history": {
+				"store": true,
+				"duplicate" : false,
+				"max": 0,
+				"expire": 0,
+				"round_value": 0
+			}
+		},
 		"sensor_x10_switch": {
 			"name": "X10 Switch",
 			"incremental" : false,
@@ -596,6 +610,21 @@
 				]
 			}
 		},
+		"stat_homeeasy_openclose": {
+			"name": "Stat homeeasy OpenClose",
+			"schema": "homeeasy.basic",
+			"parameters": {
+				"static": [],
+				"device": [],
+				"dynamic": [
+					{
+						"key": "command",
+						"ignore_values": "",
+						"sensor": "sensor_homeeasy_openclose"
+					}
+				]
+			}
+		},
 		"stat_x10_switch": {
 			"name": "Stat x10 switch",
 			"schema": "x10.basic",
@@ -889,6 +918,27 @@
 			"name": "Homeeasy Switch sensor",
 			"commands": [],
 			"sensors": ["sensor_homeeasy_switch"],
+			"parameters": [
+				{
+					"key": "address",
+					"xpl": true,
+					"description": "The xPL address of the homeeasy device (0x123456)",
+					"type": "string"
+				},
+				{
+					"key": "unit",
+					"xpl": true,
+					"description": "Unit number or 'group' (0..15, group)",
+					"type": "string"
+				}
+			]
+		},
+		"rfxbnz.homeeasy_openclose": {
+			"description": "", 
+			"id": "rfxbnz.homeeasy_openclose", 
+			"name": "Homeeasy OpenClose sensor",
+			"commands": [],
+			"sensors": ["sensor_homeeasy_openclose"],
 			"parameters": [
 				{
 					"key": "address",
