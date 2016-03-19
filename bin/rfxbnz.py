@@ -97,10 +97,10 @@ class RfxBnzManager(XplPlugin):
         self.log.debug("==> Call rfxbnz_chk_hbeat thread")
         while not self._stop.isSet():
             self.log.debug("==> Check if hbeat.app of 'rfxcomrx' process is too old ...")
-            if time.time() - self.lastTimestampHbeat > 630:
+            if time.time() - self.lastTimestampHbeat > 660:
                 self.log.error('### rfxcomrx.pl not alive, exiting')
                 self.force_leave()
-            time.sleep(120)
+            stop.wait(120)		# time.sleep(120)
 
 
 if __name__ == "__main__":
