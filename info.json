@@ -44,7 +44,7 @@
 		"sensor_battery": {
 			"name": "Battery",
 			"incremental" : false,
-			"data_type": "DT_Scaling",
+			"data_type": "DT_Battery",
 			"conversion": "",
 			"timeout" : 600,
 			"history": {
