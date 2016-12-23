@@ -44,7 +44,7 @@
 		"sensor_battery": {
 			"name": "Battery",
 			"incremental" : false,
-			"data_type": "DT_Scaling",
+			"data_type": "DT_Battery",
 			"conversion": "",
 			"timeout" : 600,
 			"history": {
@@ -72,7 +72,7 @@
 		"sensor_pressure": {
 			"name": "Pressure",
 			"incremental" : false,
-			"data_type": "DT_Pression",
+			"data_type": "DT_mbarPressure",
 			"conversion": "",
 			"timeout" : 600,
 			"history": {
@@ -1019,6 +1019,7 @@
 		"domogik_min_version": "0.4.0", 
 		"name": "rfxbnz", 
 		"type": "plugin", 
+		"xpl_clients_only": true,
 		"version": "0.1"
 	}, 
 	"json_version": 2
