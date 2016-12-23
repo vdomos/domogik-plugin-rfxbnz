@@ -1020,7 +1020,7 @@
 		"name": "rfxbnz", 
 		"type": "plugin", 
 		"xpl_clients_only": true,
-		"version": "0.1"
+		"version": "1.5"
 	}, 
 	"json_version": 2
 }
