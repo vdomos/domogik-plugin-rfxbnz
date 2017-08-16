@@ -1015,7 +1015,7 @@
 		"author_email": "domos.vesta at gmail.com", 
 		"tags": ["protocole"], 
 		"dependencies": [],
-		"description": "Virtual plugin (info.json only) for xpl-rfxcom-rx (xpl-perl) program sensor that interfaces the old usb rfxcom receiver",
+		"description": "Plugin for xpl-rfxcom-rx program (old usb rfxcom receiver)",
 		"domogik_min_version": "0.4.0", 
 		"name": "rfxbnz", 
 		"type": "plugin", 
