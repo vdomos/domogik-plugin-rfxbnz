@@ -284,8 +284,8 @@
                 "round_value": 0
             }
         },
-        "ati_remote": {
-            "name": "ATI Remote",
+        "key": {
+            "name": "Key",
             "incremental" : false,
             "data_type": "DT_String",
             "conversion": "",
@@ -675,8 +675,8 @@
                 ]
             }
         },
-        "ati_remote": {
-            "name": "Stat ati remote",
+        "key": {
+            "name": "Stat Key",
             "schema": "remote.basic",
             "parameters": {
                 "static": [],
@@ -685,7 +685,7 @@
                     {
                         "key": "keys",
                         "ignore_values": "",
-                        "sensor": "ati_remote"
+                        "sensor": "key"
                     }
                 ]
             }
@@ -1034,7 +1034,7 @@
             "id": "rfxbnz.ati_remote", 
             "name": "ATI remote sensors",
             "commands": [],
-            "sensors": ["ati_remote"],
+            "sensors": ["key"],
             "parameters": [
                 {
                     "key": "device",
