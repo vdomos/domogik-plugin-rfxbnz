@@ -1,1026 +1,1061 @@
 { 
-	"products" : [], 
-	"configuration": [
-		{
-			"default": "",
-			"description": "host where rfxcom-bnz script run",
-			"key": "host",
-			"name" : "rfxbnz host",
-			"required": true,
-			"type": "string"
-		}
-	], 
-	"commands": {},
-	"xpl_commands": {}, 
-	"sensors": {
-		"sensor_temperature": {
-			"name": "Temperature",
-			"incremental" : false,
-			"data_type": "DT_Temp",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_humidity": {
-			"name": "Humidity",
-			"incremental" : false,
-			"data_type": "DT_Humidity",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_battery": {
-			"name": "Battery",
-			"incremental" : false,
-			"data_type": "DT_Battery",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_luminosity": {
-			"name": "Luminosity",
-			"incremental" : false,
-			"data_type": "DT_Brightness",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_pressure": {
-			"name": "Pressure",
-			"incremental" : false,
-			"data_type": "DT_mbarPressure",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_power": {
-			"name": "Power",
-			"incremental" : false,
-			"data_type": "DT_Power",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_energy": {
-			"name": "Energy",
-			"incremental" : false,
-			"data_type": "DT_ApparantEnergy",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_water": {
-			"name": "Water",
-			"incremental" : false,
-			"data_type": "DT_Number",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_count": {
-			"name": "Count",
-			"incremental" : true,
-			"data_type": "DT_Number",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_uv": {
-			"name": "UV",
-			"incremental" : false,
-			"data_type": "DT_Brightness",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_windspeed": {
-			"name": "Windspeed",
-			"incremental" : false,
-			"data_type": "DT_kmhSpeed",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_rainfall": {
-			"name": "Rainfall",
-			"incremental" : false,
-			"data_type": "DT_mMeterHour",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_outflow": {
-			"name": "Outflow",
-			"incremental" : false,
-			"data_type": "DT_Number",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_voltage": {
-			"name": "Voltage",
-			"incremental" : false,
-			"data_type": "DT_Volt",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_current": {
-			"name": "Current",
-			"incremental" : false,
-			"data_type": "DT_Current",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_homeeasy_switch": {
-			"name": "Homeeasy Switch",
-			"incremental" : false,
-			"data_type": "DT_Switch",
-			"conversion": "from_off_on_to_DT_Switch",
-			"timeout" : 0,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_homeeasy_openclose": {
-			"name": "Homeeasy OpenClose",
-			"incremental" : false,
-			"data_type": "DT_OpenClose",
-			"conversion": "from_off_on_to_DT_OpenClose",
-			"timeout" : 0,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_x10_switch": {
-			"name": "X10 Switch",
-			"incremental" : false,
-			"data_type": "DT_Switch",
-			"conversion": "from_off_on_to_DT_Switch",
-			"timeout" : 0,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_ati_remote": {
-			"name": "ATI Remote",
-			"incremental" : false,
-			"data_type": "DT_String",
-			"conversion": "",
-			"timeout" : 0,
-			"history": {
-				"store": true,
-				"duplicate" : true,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		},
-		"sensor_generic": {
-			"name": "Generic",
-			"incremental" : false,
-			"data_type": "DT_Number",
-			"conversion": "",
-			"timeout" : 600,
-			"history": {
-				"store": true,
-				"duplicate" : false,
-				"max": 0,
-				"expire": 0,
-				"round_value": 0
-			}
-		}
-	},
-	"xpl_stats": {
-		"stat_temperature": {
-			"name": "Stat Temperature",
-			"schema": "sensor.basic",
-			"parameters": {
-				"static": [
-					{
-						"key": "type",
-						"value": "temp"
-					}
-				],
-				"device": [],
-				"dynamic": [
-					{
-						 "key": "current",
-						 "ignore_values": "",
-						 "sensor": "sensor_temperature"
-					}
-				]
-			}
-		},
-		"stat_humidity": {
-			"name": "Stat Humidity",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "humidity"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_humidity"
-						}
-					]
-			}
-		},
-		"stat_battery": {
-			"name": "Stat Battery",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "battery"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_battery"
-						}
-					]
-			}
-		},
-		"stat_luminosity": {
-			"name": "Stat Luminosity",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "luminosity"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_luminosity"
-						}
-					]
-			}
-		},
-		"stat_pressure": {
-			"name": "Stat Pressure",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "pressure"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_pressure"
-						}
-					]
-			}
-		},
-		"stat_power": {
-			"name": "Stat Power",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "power"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_power"
-						}
-					]
-			}
-		},
-		"stat_energy": {
-			"name": "Stat Energy",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "energy"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_energy"
-						}
-					]
-			}
-		},
-		"stat_water": {
-			"name": "Stat Water",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "water"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_water"
-						}
-					]
-			}
-		},
-		"stat_count": {
-			"name": "Stat Count",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "count"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_count"
-						}
-					]
-			}
-		},
-		"stat_uv": {
-			"name": "Stat UV",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "uv"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_uv"
-						}
-					]
-			}
-		},
-		"stat_windspeed": {
-			"name": "Stat Windspeed",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "windspeed"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_windspeed"
-						}
-					]
-			}
-		},
-		"stat_rainfall": {
-			"name": "Stat Rainfall",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "rainfall"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_rainfall"
-						}
-					]
-			}
-		},
-		"stat_outflow": {
-			"name": "Stat Outflow",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "outflow"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_outflow"
-						}
-					]
-			}
-		},
-		"stat_voltage": {
-			"name": "Stat Voltage",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "voltage"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_voltage"
-						}
-					]
-			}
-		},
-		"stat_current": {
-			"name": "Stat Current",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [
-			{
-				"key": "type",
-				"value": "current"
-			}
-			],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_current"
-						}
-					]
-			}
-		},
-		"stat_homeeasy_switch": {
-			"name": "Stat homeeasy switch",
-			"schema": "homeeasy.basic",
-			"parameters": {
-				"static": [],
-				"device": [],
-				"dynamic": [
-					{
-						"key": "command",
-						"ignore_values": "",
-						"sensor": "sensor_homeeasy_switch"
-					}
-				]
-			}
-		},
-		"stat_homeeasy_openclose": {
-			"name": "Stat homeeasy OpenClose",
-			"schema": "homeeasy.basic",
-			"parameters": {
-				"static": [],
-				"device": [],
-				"dynamic": [
-					{
-						"key": "command",
-						"ignore_values": "",
-						"sensor": "sensor_homeeasy_openclose"
-					}
-				]
-			}
-		},
-		"stat_x10_switch": {
-			"name": "Stat x10 switch",
-			"schema": "x10.basic",
-			"parameters": {
-				"static": [],
-				"device": [],
-				"dynamic": [
-					{
-						"key": "command",
-						"ignore_values": "",
-						"sensor": "sensor_x10_switch"
-					}
-				]
-			}
-		},
-		"stat_ati_remote": {
-			"name": "Stat ati remote",
-			"schema": "remote.basic",
-			"parameters": {
-				"static": [],
-				"device": [],
-				"dynamic": [
-					{
-						"key": "keys",
-						"ignore_values": "",
-						"sensor": "sensor_ati_remote"
-					}
-				]
-			}
-		},
-		"stat_generic": {
-			"name": "Stat Generic",
-			"schema": "sensor.basic",
-			"parameters": {
-					"static": [],
-					"device": [],
-					"dynamic": [
-						{
-							 "key": "current",
-							 "ignore_values": "",
-							 "sensor": "sensor_generic"
-						}
-					]
-			}
-		}
-	},	
-	"device_types": {
-		"rfxbnz.temperature": {
-			"description": "", 
-			"id": "rfxbnz.temperature", 
-			"name": "Temperature sensors",
-			"commands": [],
-			"sensors": ["sensor_temperature", "sensor_battery"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.humidity": {
-			"description": "", 
-			"id": "rfxbnz.hummidity", 
-			"name": "Humidity sensors",
-			"commands": [],
-			"sensors": ["sensor_humidity"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.temperature_humidity": {
-			"description": "", 
-			"id": "rfxbnz.temperature_hummidity", 
-			"name": "Temperature and Humidity sensors",
-			"commands": [],
-			"sensors": ["sensor_temperature", "sensor_humidity", "sensor_battery"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.battery": {
-			"description": "", 
-			"id": "rfxbnz.battery", 
-			"name": "Battery sensors",
-			"commands": [],
-			"sensors": ["sensor_battery"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.luminosity": {
-			"description": "", 
-			"id": "rfxbnz.luminosity", 
-			"name": "Luminosity sensors",
-			"commands": [],
-			"sensors": ["sensor_luminosity"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.pressure": {
-			"description": "", 
-			"id": "rfxbnz.pressure", 
-			"name": "Pressure sensors",
-			"commands": [],
-			"sensors": ["sensor_pressure"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.power": {
-			"description": "", 
-			"id": "rfxbnz.power", 
-			"name": "Power sensors",
-			"commands": [],
-			"sensors": ["sensor_power"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.energy": {
-			"description": "", 
-			"id": "rfxbnz.energy", 
-			"name": "Energy sensors",
-			"commands": [],
-			"sensors": ["sensor_energy"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.water": {
-			"description": "", 
-			"id": "rfxbnz.water", 
-			"name": "Water sensors",
-			"commands": [],
-			"sensors": ["sensor_water"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.count": {
-			"description": "", 
-			"id": "rfxbnz.count", 
-			"name": "Count sensors",
-			"commands": [],
-			"sensors": ["sensor_count"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.uv": {
-			"description": "", 
-			"id": "rfxbnz.uv", 
-			"name": "UV sensors",
-			"commands": [],
-			"sensors": ["sensor_uv"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.windspeed": {
-			"description": "", 
-			"id": "rfxbnz.windspeed", 
-			"name": "Windspeed sensors",
-			"commands": [],
-			"sensors": ["sensor_windspeed"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.rainfall": {
-			"description": "", 
-			"id": "rfxbnz.rainfall", 
-			"name": "Rainfall sensors",
-			"commands": [],
-			"sensors": ["sensor_rainfall"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.outflow": {
-			"description": "", 
-			"id": "rfxbnz.outflow", 
-			"name": "Outflow sensors",
-			"commands": [],
-			"sensors": ["sensor_outflow"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.voltage": {
-			"description": "", 
-			"id": "rfxbnz.voltage", 
-			"name": "Voltage sensors",
-			"commands": [],
-			"sensors": ["sensor_voltage"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.current": {
-			"description": "", 
-			"id": "rfxbnz.current", 
-			"name": "Current sensors",
-			"commands": [],
-			"sensors": ["sensor_current"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.homeeasy_switch": {
-			"description": "", 
-			"id": "rfxbnz.homeeasy_switch", 
-			"name": "Homeeasy Switch sensor",
-			"commands": [],
-			"sensors": ["sensor_homeeasy_switch"],
-			"parameters": [
-				{
-					"key": "address",
-					"xpl": true,
-					"description": "The xPL address of the homeeasy device (0x123456)",
-					"type": "string"
-				},
-				{
-					"key": "unit",
-					"xpl": true,
-					"description": "Unit number or 'group' (0..15, group)",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.homeeasy_openclose": {
-			"description": "", 
-			"id": "rfxbnz.homeeasy_openclose", 
-			"name": "Homeeasy OpenClose sensor",
-			"commands": [],
-			"sensors": ["sensor_homeeasy_openclose"],
-			"parameters": [
-				{
-					"key": "address",
-					"xpl": true,
-					"description": "The xPL address of the homeeasy device (0x123456)",
-					"type": "string"
-				},
-				{
-					"key": "unit",
-					"xpl": true,
-					"description": "Unit number or 'group' (0..15, group)",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.x10_switch": {
-			"description": "", 
-			"id": "rfxbnz.x10_switch", 
-			"name": "X10 Switch sensors",
-			"commands": [],
-			"sensors": ["sensor_x10_switch"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "The xPL device name (a1..a16 to p1..p16)",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.ati_remote": {
-			"description": "", 
-			"id": "rfxbnz.ati_remote", 
-			"name": "ATI remote sensors",
-			"commands": [],
-			"sensors": ["sensor_ati_remote"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "The xPL device name of the ATI remote (ATI_Remote)",
-					"type": "string"
-				}
-			]
-		},
-		"rfxbnz.generic": {
-			"description": "", 
-			"id": "rfxbnz.generic", 
-			"name": "Generic sensors (Arduino Oregon)",
-			"commands": [],
-			"sensors": ["sensor_generic"],
-			"parameters": [
-				{
-					"key": "device",
-					"xpl" : true,
-					"description": "xPL device parameter name.",
-					"type": "string"
-				},
-				{
-					"key": "type",
-					"xpl": true,
-					"description": "xPL Sensor type",
-					"type": "choice",
-					"choices" : {
-						"temp" : "temp",
-						"humidity" : "humidity"
-					}
-				}
-			]
-		}
-	}, 
-	"identity": {
-		"author": "domos", 
-		"author_email": "domos.vesta at gmail.com", 
-		"tags": ["protocole"], 
-		"dependencies": [],
-		"description": "Plugin for xpl-rfxcom-rx program (old usb rfxcom receiver)",
-		"domogik_min_version": "0.4.0", 
-		"name": "rfxbnz", 
-		"type": "plugin", 
-		"xpl_clients_only": true,
-		"version": "1.5"
-	}, 
-	"json_version": 2
+    "products" : [], 
+    "configuration": [], 
+    "commands": {},
+    "xpl_commands": {}, 
+    "sensors": {
+        "temperature": {
+            "name": "Temperature",
+            "incremental" : false,
+            "data_type": "DT_Temp",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "humidity": {
+            "name": "Humidity",
+            "incremental" : false,
+            "data_type": "DT_Humidity",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "battery": {
+            "name": "Battery",
+            "incremental" : false,
+            "data_type": "DT_Battery",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "luminosity": {
+            "name": "Luminosity",
+            "incremental" : false,
+            "data_type": "DT_Brightness",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "pressure": {
+            "name": "Pressure",
+            "incremental" : false,
+            "data_type": "DT_mbarPressure",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "power": {
+            "name": "Power",
+            "incremental" : false,
+            "data_type": "DT_Power",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "energy": {
+            "name": "Energy",
+            "incremental" : false,
+            "data_type": "DT_ApparantEnergy",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "water": {
+            "name": "Water",
+            "incremental" : false,
+            "data_type": "DT_Number",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "count": {
+            "name": "Count",
+            "incremental" : true,
+            "data_type": "DT_Number",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "uv": {
+            "name": "UV",
+            "incremental" : false,
+            "data_type": "DT_Brightness",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "windspeed": {
+            "name": "Windspeed",
+            "incremental" : false,
+            "data_type": "DT_kmhSpeed",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "rainfall": {
+            "name": "Rainfall",
+            "incremental" : false,
+            "data_type": "DT_mMeterHour",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "outflow": {
+            "name": "Outflow",
+            "incremental" : false,
+            "data_type": "DT_Number",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "voltage": {
+            "name": "Voltage",
+            "incremental" : false,
+            "data_type": "DT_Volt",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "current": {
+            "name": "Current",
+            "incremental" : false,
+            "data_type": "DT_Current",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "value": {
+            "name": "Value",
+            "incremental" : false,
+            "data_type": "DT_Number",
+            "conversion": "",
+            "timeout" : 600,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "he_switch": {
+            "name": "Switch",
+            "incremental" : false,
+            "data_type": "DT_Switch",
+            "conversion": "from_off_on_to_DT_Switch",
+            "timeout" : 0,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "he_opening": {
+            "name": "Opening",
+            "incremental" : false,
+            "data_type": "DT_OpenClose",
+            "conversion": "from_off_on_to_DT_OpenClose",
+            "timeout" : 0,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "x10_switch": {
+            "name": "Switch",
+            "incremental" : false,
+            "data_type": "DT_Switch",
+            "conversion": "from_off_on_to_DT_Switch",
+            "timeout" : 0,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "x10_opening": {
+            "name": "Opening",
+            "incremental" : false,
+            "data_type": "DT_OpenClose",
+            "conversion": "from_off_on_to_DT_OpenClose",
+            "timeout" : 0,
+            "history": {
+                "store": true,
+                "duplicate" : false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "ati_remote": {
+            "name": "ATI Remote",
+            "incremental" : false,
+            "data_type": "DT_String",
+            "conversion": "",
+            "timeout" : 0,
+            "history": {
+                "store": true,
+                "duplicate" : true,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        }
+    },
+    "xpl_stats": {
+        "temperature": {
+            "name": "Stat Temperature",
+            "schema": "sensor.basic",
+            "parameters": {
+                "static": [
+                    {
+                        "key": "type",
+                        "value": "temp"
+                    }
+                ],
+                "device": [],
+                "dynamic": [
+                    {
+                         "key": "current",
+                         "ignore_values": "",
+                         "sensor": "temperature"
+                    }
+                ]
+            }
+        },
+        "humidity": {
+            "name": "Stat Humidity",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "humidity"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "humidity"
+                        }
+                    ]
+            }
+        },
+        "battery": {
+            "name": "Stat Battery",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "battery"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "battery"
+                        }
+                    ]
+            }
+        },
+        "luminosity": {
+            "name": "Stat Luminosity",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "luminosity"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "luminosity"
+                        }
+                    ]
+            }
+        },
+        "pressure": {
+            "name": "Stat Pressure",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "pressure"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "pressure"
+                        }
+                    ]
+            }
+        },
+        "power": {
+            "name": "Stat Power",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "power"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "power"
+                        }
+                    ]
+            }
+        },
+        "energy": {
+            "name": "Stat Energy",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "energy"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "energy"
+                        }
+                    ]
+            }
+        },
+        "water": {
+            "name": "Stat Water",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "water"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "water"
+                        }
+                    ]
+            }
+        },
+        "count": {
+            "name": "Stat Count",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "count"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "count"
+                        }
+                    ]
+            }
+        },
+        "uv": {
+            "name": "Stat UV",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "uv"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "uv"
+                        }
+                    ]
+            }
+        },
+        "windspeed": {
+            "name": "Stat Windspeed",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "windspeed"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "windspeed"
+                        }
+                    ]
+            }
+        },
+        "rainfall": {
+            "name": "Stat Rainfall",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "rainfall"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "rainfall"
+                        }
+                    ]
+            }
+        },
+        "outflow": {
+            "name": "Stat Outflow",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "outflow"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "outflow"
+                        }
+                    ]
+            }
+        },
+        "voltage": {
+            "name": "Stat Voltage",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "voltage"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "voltage"
+                        }
+                    ]
+            }
+        },
+        "current": {
+            "name": "Stat Current",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [
+            {
+                "key": "type",
+                "value": "current"
+            }
+            ],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "current"
+                        }
+                    ]
+            }
+        },
+        "value": {
+            "name": "Stat Value",
+            "schema": "sensor.basic",
+            "parameters": {
+                    "static": [],
+                    "device": [],
+                    "dynamic": [
+                        {
+                             "key": "current",
+                             "ignore_values": "",
+                             "sensor": "value"
+                        }
+                    ]
+            }
+        },
+        "homeeasy_switch": {
+            "name": "Stat homeeasy switch",
+            "schema": "homeeasy.basic",
+            "parameters": {
+                "static": [],
+                "device": [],
+                "dynamic": [
+                    {
+                        "key": "command",
+                        "ignore_values": "",
+                        "sensor": "he_switch"
+                    }
+                ]
+            }
+        },
+        "homeeasy_opening": {
+            "name": "Stat homeeasy Opening",
+            "schema": "homeeasy.basic",
+            "parameters": {
+                "static": [],
+                "device": [],
+                "dynamic": [
+                    {
+                        "key": "command",
+                        "ignore_values": "",
+                        "sensor": "he_opening"
+                    }
+                ]
+            }
+        },
+        "x10_switch": {
+            "name": "Stat x10 switch",
+            "schema": "x10.basic",
+            "parameters": {
+                "static": [],
+                "device": [],
+                "dynamic": [
+                    {
+                        "key": "command",
+                        "ignore_values": "",
+                        "sensor": "x10_switch"
+                    }
+                ]
+            }
+        },
+        "x10_opening": {
+            "name": "Stat x10 opening",
+            "schema": "x10.basic",
+            "parameters": {
+                "static": [],
+                "device": [],
+                "dynamic": [
+                    {
+                        "key": "command",
+                        "ignore_values": "",
+                        "sensor": "x10_opening"
+                    }
+                ]
+            }
+        },
+        "ati_remote": {
+            "name": "Stat ati remote",
+            "schema": "remote.basic",
+            "parameters": {
+                "static": [],
+                "device": [],
+                "dynamic": [
+                    {
+                        "key": "keys",
+                        "ignore_values": "",
+                        "sensor": "ati_remote"
+                    }
+                ]
+            }
+        }
+    },    
+    "device_types": {
+        "rfxbnz.temperature": {
+            "description": "", 
+            "id": "rfxbnz.temperature", 
+            "name": "Temperature sensors",
+            "commands": [],
+            "sensors": ["temperature", "battery"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.humidity": {
+            "description": "", 
+            "id": "rfxbnz.hummidity", 
+            "name": "Humidity sensors",
+            "commands": [],
+            "sensors": ["humidity"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.temperature_humidity": {
+            "description": "", 
+            "id": "rfxbnz.temperature_hummidity", 
+            "name": "Temperature and Humidity sensors",
+            "commands": [],
+            "sensors": ["temperature", "humidity", "battery"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.battery": {
+            "description": "", 
+            "id": "rfxbnz.battery", 
+            "name": "Battery sensors",
+            "commands": [],
+            "sensors": ["battery"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.luminosity": {
+            "description": "", 
+            "id": "rfxbnz.luminosity", 
+            "name": "Luminosity sensors",
+            "commands": [],
+            "sensors": ["luminosity"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.pressure": {
+            "description": "", 
+            "id": "rfxbnz.pressure", 
+            "name": "Pressure sensors",
+            "commands": [],
+            "sensors": ["pressure"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.power": {
+            "description": "", 
+            "id": "rfxbnz.power", 
+            "name": "Power sensors",
+            "commands": [],
+            "sensors": ["power"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.energy": {
+            "description": "", 
+            "id": "rfxbnz.energy", 
+            "name": "Energy sensors",
+            "commands": [],
+            "sensors": ["energy"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.water": {
+            "description": "", 
+            "id": "rfxbnz.water", 
+            "name": "Water sensors",
+            "commands": [],
+            "sensors": ["water"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.count": {
+            "description": "", 
+            "id": "rfxbnz.count", 
+            "name": "Count sensors",
+            "commands": [],
+            "sensors": ["count"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.uv": {
+            "description": "", 
+            "id": "rfxbnz.uv", 
+            "name": "UV sensors",
+            "commands": [],
+            "sensors": ["uv"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.windspeed": {
+            "description": "", 
+            "id": "rfxbnz.windspeed", 
+            "name": "Windspeed sensors",
+            "commands": [],
+            "sensors": ["windspeed"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.rainfall": {
+            "description": "", 
+            "id": "rfxbnz.rainfall", 
+            "name": "Rainfall sensors",
+            "commands": [],
+            "sensors": ["rainfall"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.outflow": {
+            "description": "", 
+            "id": "rfxbnz.outflow", 
+            "name": "Outflow sensors",
+            "commands": [],
+            "sensors": ["outflow"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.voltage": {
+            "description": "", 
+            "id": "rfxbnz.voltage", 
+            "name": "Voltage sensors",
+            "commands": [],
+            "sensors": ["voltage"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.current": {
+            "description": "", 
+            "id": "rfxbnz.current", 
+            "name": "Current sensors",
+            "commands": [],
+            "sensors": ["current"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.generic": {
+            "description": "", 
+            "id": "rfxbnz.generic", 
+            "name": "Generic sensors (Arduino Oregon)",
+            "commands": [],
+            "sensors": ["value"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "xPL device parameter name.",
+                    "type": "string"
+                },
+                {
+                    "key": "type",
+                    "xpl": true,
+                    "description": "xPL Sensor type",
+                    "type": "choice",
+                    "choices" : {
+                        "temp" : "temp",
+                        "humidity" : "humidity"
+                    }
+                }
+            ]
+        },
+        "rfxbnz.homeeasy_switch": {
+            "description": "", 
+            "id": "rfxbnz.homeeasy_switch", 
+            "name": "Homeeasy Switch sensor",
+            "commands": [],
+            "sensors": ["he_switch"],
+            "parameters": [
+                {
+                    "key": "address",
+                    "xpl": true,
+                    "description": "The xPL address of the homeeasy device (0x123456)",
+                    "type": "string"
+                },
+                {
+                    "key": "unit",
+                    "xpl": true,
+                    "description": "Unit number or 'group' (0..15, group)",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.homeeasy_opening": {
+            "description": "", 
+            "id": "rfxbnz.homeeasy_opening", 
+            "name": "Homeeasy Opening sensor",
+            "commands": [],
+            "sensors": ["he_opening"],
+            "parameters": [
+                {
+                    "key": "address",
+                    "xpl": true,
+                    "description": "The xPL address of the homeeasy device (0x123456)",
+                    "type": "string"
+                },
+                {
+                    "key": "unit",
+                    "xpl": true,
+                    "description": "Unit number or 'group' (0..15, group)",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.x10_switch": {
+            "description": "", 
+            "id": "rfxbnz.x10_switch", 
+            "name": "X10 Switch sensors",
+            "commands": [],
+            "sensors": ["x10_switch"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "The xPL device name (a1..a16 to p1..p16)",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.x10_opening": {
+            "description": "", 
+            "id": "rfxbnz.x10_opening", 
+            "name": "X10 Opening sensors",
+            "commands": [],
+            "sensors": ["x10_opening"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "The xPL device name (a1..a16 to p1..p16)",
+                    "type": "string"
+                }
+            ]
+        },
+        "rfxbnz.ati_remote": {
+            "description": "", 
+            "id": "rfxbnz.ati_remote", 
+            "name": "ATI remote sensors",
+            "commands": [],
+            "sensors": ["ati_remote"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl" : true,
+                    "description": "The xPL device name of the ATI remote (ATI_Remote)",
+                    "type": "string"
+                }
+            ]
+        }
+    }, 
+    "identity": {
+        "author": "domos", 
+        "author_email": "domos.vesta at gmail.com", 
+        "tags": ["protocole"], 
+        "dependencies": [],
+        "description": "Plugin for xpl-rfxcom-rx program (old usb rfxcom receiver)",
+        "domogik_min_version": "0.4.0", 
+        "name": "rfxbnz", 
+        "type": "plugin", 
+        "xpl_clients_only": true,
+        "version": "2.0"
+    }, 
+    "json_version": 2
 }
